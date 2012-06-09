@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceScreen android:summary="Connect to Airbears once. Set username and password bellow. Enable. Forget about AirBears." android:key="note" android:enabled="true"></PreferenceScreen>
+    <CheckBoxPreference android:title="Enabled" android:persistent="false" android:key="enabled" android:defaultValue="false"></CheckBoxPreference>
+    <EditTextPreference android:key="username" android:title="CalNet ID / Username"></EditTextPreference>
+    <EditTextPreference android:key="password" android:password="true" android:title="Passphrase / Password"></EditTextPreference>
+    <ListPreference android:title="Login Type" android:summary="Calnet ID or Guest"
+	    android:entries="@array/login_type" android:entryValues="@array/login_type"
+	    android:dialogTitle="Type of login" android:defaultValue="Calnet ID"
+	    android:key="login_type" />
+</PreferenceScreen>
